@@ -2,10 +2,29 @@
   <ion-toolbar>
     <ion-back-button  slot="start" defaultHref="/home">
     </ion-back-button>
-    <ion-title>historial</ion-title>
+    <ion-title>Historial de infracciones</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ngx-datatable
+  class="fullscreen"
+    [rows]="insfracciones"
+    [ngClass]="tableStyle"
+    [rowHeigth]="'auto'"
+    [headerHeigth]="50"
+    [columnMode]="'force'">
+  <ngx-datatable-column name = "Fecha"></ngx-datatable-column>
+  <ngx-datatable-column name = "Coordinates"></ngx-datatable-column>
 
+
+  <ngx-datatable-column name = "Actions" sortable="false">
+      <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+        <ion-button size="small" fill="outline" (click)="open(row)">Detalles</ion-button>
+
+      </ng-template>
+
+  </ngx-datatable-column>
+
+  </ngx-datatable>
 </ion-content>

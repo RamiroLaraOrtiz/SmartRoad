@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { HistorialPageRoutingModule } from './historial-routing.module';
 
 import { HistorialPage } from './historial.page';
-
+import { NgxDatatableModule } from "@swimlane/ngx-datatable";
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HistorialPageRoutingModule
+    HistorialPageRoutingModule,
+    NgxDatatableModule
   ],
   declarations: [HistorialPage]
 })
