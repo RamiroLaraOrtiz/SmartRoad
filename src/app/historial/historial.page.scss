@@ -1,3 +1,51 @@
-html{
-    font-size: 2px !important;
-}
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: rgba(255, 255, 255, 0.719); 
+	}
+
+th { 
+	background: rgb(56, 128, 255); 
+	color: white; 
+    font-weight: bold; 
+    font-size: 12px !important;
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid rgb(196, 196, 196); 
+	text-align: left; 
+	font-size: 18px;
+    }
+    
+
+    .remove{
+        width: 80px;
+        height: 25px;
+        font-size: 20px;
+        background-color: rgb(56, 128, 255);
+        color: white;
+        border: none;
+        border-radius: 11px;
+
+        line-height:1.2em;
+    }
+
+    .text{
+        font-size: 12px;
+
+    }
+    .tabla{
+        padding: 10px;
+        padding-top: -30px !important;
+        margin-top: -30px !important;
+    }
+    table, th, td {
+        border-left: none;
+        border-right: none;
+      }

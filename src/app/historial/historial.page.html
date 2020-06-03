@@ -7,25 +7,24 @@
 </ion-header>
 
 <ion-content>
-  <ngx-datatable
-  class="fullscreen"
-style="margin:1rem;"
-    [rows]="insfracciones"
-    [ngClass]="tableStyle"
-    [rowHeigth]="'20rem'"
-    [headerHeigth]="50"
-    [columnMode]="'force'">
-  <ngx-datatable-column name = "Fecha"></ngx-datatable-column>
-  <ngx-datatable-column name = "Coordinates"></ngx-datatable-column>
+<div class="tabla">
 
+  <table id="contentToConvert">
+    <thead>
 
-  <ngx-datatable-column name = "Actions" sortable="false">
-      <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-        <ion-button size="small" shape="round" (click)="open(row)">Detalles</ion-button>
-
-      </ng-template>
-
-  </ngx-datatable-column>
-
-  </ngx-datatable>
+        <tr>
+          <th>Fecha</th>
+          <th>Coordinates</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let in of insfracciones">
+        <tr>
+            <td >{{in.fecha}}</td>
+            <td>{{in.coordinates}}</td>
+            <td><button class="borrar remove input2" (click)="open(in.fecha, in.speedLimit, in.yourSpeedLimit, in.coordinates, in.lugar)"><span class="text">Detalles</span></button></td>   
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </ion-content>
