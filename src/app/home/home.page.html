@@ -13,21 +13,25 @@
     </ion-toolbar>
   </ion-header>
   <ion-title size="large" class="ion-text-center ion-padding-top">Smart Road</ion-title>
-    <ion-card id="leyenda" >
-      <ion-card-header id="header">
-        Sobre nosotros
-      </ion-card-header>
-      <ion-card-content > 
-        Esta aplicacion es para poder ver en que
-        momento se estan excediendo o quebrantando
-        alguna ley en carretera, esto es para poder
-        llevar un registro de el comportamiento del
-        usuario en las carreteras
-      </ion-card-content> 
-    </ion-card>
+  <div class="wrapper">
 
-    <ion-button>comentario</ion-button>
+    <div class="three">  
 
-    <ion-button [routerLink]="['/historial']"> historial</ion-button> 
+      <ion-card id="leyenda" >
+        <ion-card-header id="header">
+          Sobre nosotros
+        </ion-card-header>
+        <ion-card-content > 
+          Esta aplicacion es para poder ver en que
+          momento se estan excediendo o quebrantando
+          alguna ley en carretera, esto es para poder
+          llevar un registro de el comportamiento del
+          usuario en las carreteras.
+        </ion-card-content> 
+      </ion-card>
+    </div>
 
+    <div class="five">    <ion-button>Feedback</ion-button></div>
+    <div class="six">    <ion-button [routerLink]="['/historial']"> historial</ion-button> </div>
+  </div>
 </ion-content>
