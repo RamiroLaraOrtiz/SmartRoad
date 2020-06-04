@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">smartroad</string>
+    <string name="title_activity_main">smartroad</string>
+    <string name="package_name">com.smartroad.app</string>
+    <string name="custom_url_scheme">com.smartroad.app</string>
+</resources>
