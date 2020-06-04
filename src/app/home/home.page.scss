@@ -28,7 +28,7 @@
 
 #leyenda{
   border: rgba(255, 255, 255, 0.726) 2px solid;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 10px; 
   border-radius: 20px;
   text-align: justify;
@@ -36,8 +36,12 @@
 #header{
   text-align: center;
 }
-#cool{
-
+#logosamrt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
 }
 
 * {box-sizing: border-box;}
